@@ -1,6 +1,27 @@
 <DOCTYPE! html>
   <html>
     <head>
-      <title>Fresh titles</title>
+      <title>packers</title>
     </head>
-  </html>
+    <body>
+      <form onsubmit="checkPassword(event)">
+        <label for="password">Enter password:</label>
+        <input type="password" id="password" required>
+        <button type="submit">enter</button>
+      </form>
+
+      <script>
+        function checkPassword(event) {
+        event.preventDefault();
+    
+        const password = document.getElementById("password").value;
+  
+        if (password === "") {
+            window.location.href = "packs.html";
+        } else {
+            alert("error; incorrect code.");
+        }
+    }
+    </script>
+  </body>
+</html>
